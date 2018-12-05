@@ -25,7 +25,7 @@ class Context
         $this->data = $data;
     }
 
-    public function setStrategy(Strategy $strategy)
+    public function setStrategy(StrategyInterface $strategy)
     {
         $this->strategy = $strategy;
     }

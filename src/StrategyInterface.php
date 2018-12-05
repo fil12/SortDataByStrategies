@@ -9,7 +9,7 @@
 namespace App;
 
 
-interface Strategy
+interface StrategyInterface
 {
     public function sorting($data);
 }

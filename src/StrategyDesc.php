@@ -9,7 +9,7 @@
 namespace App;
 
 
-class StrategyDesc implements Strategy
+class StrategyDesc implements StrategyInterface
 {
     public function sorting($data)
     {
