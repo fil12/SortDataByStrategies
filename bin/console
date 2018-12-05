@@ -1,0 +1,19 @@
+#!/usr/bin/env php
+<?php
+
+require_once __DIR__ . '/../vendor/autoload.php';
+
+
+use App\Context;
+use App\StrategyAsc;
+use App\StrategyDesc;
+
+$data = [1,4,5,2,87,23,541,23];
+$words = ['orange', 'bananas','cherry', 'tomatos', 'potatos'];
+
+$orddata = new Context($words);
+$orddata->setStrategy(new StrategyAsc());
+print_r($orddata->sort());
+
+$orddata->setStrategy(new StrategyDesc());
+print_r($orddata->sort());
